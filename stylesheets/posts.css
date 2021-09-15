@@ -1,0 +1,82 @@
+body.posts {
+  display: flex;
+  justify-content: center;
+
+  padding: 100px 0 50px;
+
+  background: #FAFAFA;
+}
+
+.postTeaser {
+  display: block;
+
+  width: 600px;
+  padding: 20px 20px 30px;
+
+  background: #FFFFFF;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.postTeaser:not(:first-child) {
+  margin-top: 10px;
+}
+
+.postTeaser h3 {
+  font-family: 'PT Sans Caption', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #000;
+}
+
+.postTeaser figure {
+  background-position: center;
+  background-size: cover;
+
+  height: 200px;
+  margin-bottom: 30px;
+}
+
+.postTeaser p {
+  margin-top: 8px;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.4)
+}
+
+@media (min-device-width: 320px) and (max-device-width: 767px) and (orientation: portrait) {
+
+  body.posts {
+    padding: 120px 0 70px;
+    background-color: white;
+  }
+
+  section {
+    width: calc(100% - 20px);
+  }
+
+  .postTeaser {
+    width: 100%;
+    padding: 0;
+
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+
+    background-color: inherit;
+  }
+
+  .postTeaser:not(:first-child) {
+    margin-top: 70px;
+  }
+
+  .postTeaser figure {
+    width: calc(100vw - 20px);
+    height: calc(100vw - 20px);
+  }
+
+}

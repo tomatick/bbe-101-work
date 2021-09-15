@@ -1,0 +1,149 @@
+article {
+  padding-top: 50px;
+  padding-bottom: 31px;
+}
+
+article a:hover {
+  text-decoration: underline;
+}
+
+article h1,
+article h2,
+article h3,
+article h4,
+article p,
+article ol,
+article ul,
+article blockquote {
+  width: 800px;
+  margin: auto;
+}
+
+article p,
+article ol,
+article ul,
+article blockquote {
+  margin-bottom: 30px;
+
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+article img {
+  display: block;
+
+  width: 1020px;
+  margin: 80px auto;
+}
+
+article h1,
+article h2,
+article h3,
+article h4 {
+  font-family: 'PT Sans Caption', sans-serif;
+  font-weight: bold;
+}
+
+article h1 {
+  margin-top: 64px;
+  margin-bottom: 16px;
+
+  font-size: 32px;
+  line-height: 40px;
+}
+
+article h2 {
+  margin-top: 43px;
+  margin-bottom: 7px;
+
+  font-size: 24px;
+  line-height: 32px;
+}
+
+article h3 {
+  margin-top: 35px;
+  margin-bottom: 7px;
+
+  font-size: 20px;
+  line-height: 25px;
+}
+
+article h4 {
+  margin-top: 33px;
+  margin-bottom: 7px;
+
+  font-size: 16px;
+  line-height: 22px;
+}
+
+article h1 + p {
+  font-family: 'PT Sans Caption', sans-serif;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+article p {
+  margin-bottom: 30px;
+}
+
+article b {
+  font-weight: bold;
+}
+
+article i {
+  font-style: italic;
+}
+
+article blockquote {
+  font-style: italic;
+
+  position: relative;
+}
+
+article blockquote::before {
+  content: "";
+  display: block;
+  position: absolute;
+
+  width: 3px;
+  height: 100%;
+  margin-left: -20px;
+  margin-top: 3px;
+
+  background: black;
+
+}
+
+article ul li {
+  list-style: disc;
+}
+
+article ol li {
+  width: 680px;
+  margin-left: 20px;
+
+  list-style: decimal;
+}
+
+@media (max-width: 1024px) {
+  article img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  article h1,
+  article h2,
+  article h3,
+  article h4,
+  article p,
+  article ol,
+  article ul,
+  article blockquote {
+    width: calc(100% - 20px);
+  }
+
+  article ol li {
+    width: calc(100% - 40px);
+  }
+}
